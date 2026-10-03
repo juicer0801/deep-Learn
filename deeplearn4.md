@@ -10,6 +10,7 @@ import torch
 
 创建张量
 1.
+```python
 x = torch.tensor([[1, 2, 3],
                   [4, 5, 6]])
 print(x)
@@ -17,6 +18,7 @@ print(x.shape)   # torch.Size([2, 3])
 print(x.dtype)   # torch.int64
 
 torch.tensor() 会复制数据。如果你有个 NumPy 数组，不想复制，用 torch.from_numpy()。
+```
 
 2.
 a = torch.zeros((2, 3, 4))      # 全零，形状 (2, 3, 4)
